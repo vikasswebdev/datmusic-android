@@ -1,7 +1,7 @@
 package tm.alashow.buildSrc
 
 object App {
-    const val id = "tm.alashow.datmusic"
+    const val id = "com.mygana"
 
     const val compileSdkVersion = 33
     const val targetSdkVersion = 33

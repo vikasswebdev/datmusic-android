@@ -30,7 +30,7 @@ android {
 	compileSdkVersion = App.compileSdkVersion
 
 	defaultConfig {
-		namespace = "tm.alashow.datmusic"
+                namespace = "com.mygana"
 		applicationId = App.id
 		versionCode = App.versionCode
 		versionName = "${App.versionName}-${gitSha}"
