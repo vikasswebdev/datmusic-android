@@ -19,7 +19,7 @@ import javax.inject.Inject
 import timber.log.Timber
 import tm.alashow.base.inititializer.AppInitializer
 import tm.alashow.base.util.extensions.orBlank
-import tm.alashow.datmusic.R
+import com.mygana.R
 import tm.alashow.datmusic.ui.buildArtistDetailsIntent
 import tm.alashow.datmusic.ui.buildSearchIntent
 
