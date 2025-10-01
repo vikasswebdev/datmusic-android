@@ -27,17 +27,17 @@ play {
 def gitSha = "git rev-parse --short HEAD".execute([], project.rootDir).text.trim()
 
 android {
-	compileSdkVersion = App.compileSdkVersion
+        namespace = "com.mygana"
+        compileSdk = App.compileSdkVersion
 
-	defaultConfig {
-		namespace = "tm.alashow.datmusic"
-		applicationId = App.id
-		versionCode = App.versionCode
-		versionName = "${App.versionName}-${gitSha}"
-		targetSdkVersion(App.targetSdkVersion)
-		minSdkVersion(App.minSdkVersion)
+        defaultConfig {
+                applicationId = App.id
+                versionCode = App.versionCode
+                versionName = "${App.versionName}-${gitSha}"
+                targetSdk = App.targetSdkVersion
+                minSdk = App.minSdkVersion
 
-		multiDexEnabled = true
+                multiDexEnabled = true
 		vectorDrawables.useSupportLibrary = true
 	}
 
@@ -48,19 +48,19 @@ android {
 		main.res.srcDirs += "src/main/res-drawable"
 	}
 
-	compileOptions {
-		sourceCompatibility = 1.8
-		targetCompatibility = 1.8
-	}
+        compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_1_8
+                targetCompatibility = JavaVersion.VERSION_1_8
+        }
 
 
 	buildFeatures {
 		compose = true
 	}
 
-	composeOptions {
-		kotlinCompilerExtensionVersion = Deps.Android.Compose.compilerVersion
-	}
+        composeOptions {
+                kotlinCompilerExtensionVersion = Deps.Android.Compose.compilerVersion
+        }
 
 	signingConfigs {
 		debug {
