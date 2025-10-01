@@ -3,7 +3,11 @@ plugins {
 }
 
 repositories {
-    gradlePluginPortal()
     google()
     mavenCentral()
+    gradlePluginPortal()
+}
+
+kotlin {
+    jvmToolchain(17)
 }
