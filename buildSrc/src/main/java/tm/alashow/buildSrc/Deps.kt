@@ -3,8 +3,8 @@ package tm.alashow.buildSrc
 object Deps {
     object Gradle {
         const val dexCount = "com.getkeepsafe.dexcount:dexcount-gradle-plugin:2.0.0"
-        const val playPublisher = "com.github.triplet.gradle:play-publisher:3.7.0"
-        const val googleServices = "com.google.gms:google-services:4.3.13"
+        const val playPublisher = "com.github.triplet.gradle:play-publisher:3.8.6"
+        const val googleServices = "com.google.gms:google-services:4.4.1"
     }
 
     object Kotlin {
