@@ -29,9 +29,16 @@ buildscript {
 }
 
 plugins {
-    id "com.diffplug.spotless" version "6.1.0"
-    id "com.github.ben-manes.versions" version "0.42.0"
-    id "com.kncept.junit.reporter" version "2.1.0"
+    id "com.android.application" version "8.2.2" apply false
+    id "com.android.library" version "8.2.2" apply false
+    id "org.jetbrains.kotlin.android" version "1.9.22" apply false
+    id "org.jetbrains.kotlin.kapt" version "1.9.22" apply false
+    id "org.jetbrains.kotlin.plugin.serialization" version "1.9.22" apply false
+    id "org.jetbrains.kotlin.plugin.parcelize" version "1.9.22" apply false
+    id "com.google.dagger.hilt.android" version "2.50" apply false
+    id "androidx.navigation.safeargs.kotlin" version "2.7.6" apply false
+    id "com.diffplug.spotless" version "6.23.3"
+    id "com.github.ben-manes.versions" version "0.51.0"
 }
 
 allprojects {
@@ -41,7 +48,6 @@ allprojects {
         maven { url 'https://androidx.dev/snapshots/builds/8020137/artifacts/repository' }
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
         maven { url 'https://jitpack.io' }
-        jcenter()
     }
 
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
@@ -68,7 +74,7 @@ subprojects {
         kotlin {
             licenseHeaderFile project.rootProject.file('spotless/copyright.kt')
             target "**/*.kt"
-            ktlint("0.41.0").userData([
+            ktlint("0.50.0").userData([
                     'android'        : 'true',
                     'max_line_length': '200',
                     'disabled_rules' : 'no-wildcard-imports'
