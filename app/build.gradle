@@ -7,13 +7,13 @@ import tm.alashow.buildSrc.App
 import tm.alashow.buildSrc.Deps
 
 plugins {
-	id("com.android.application")
-	id("dagger.hilt.android.plugin")
-	id("kotlin-android")
-	id("kotlin-kapt")
-	id("kotlin-parcelize")
-	id("org.jetbrains.kotlin.plugin.serialization")
-	id("androidx.navigation.safeargs.kotlin")
+	id "com.android.application"
+	id "com.google.dagger.hilt.android"
+	id "org.jetbrains.kotlin.android"
+	id "org.jetbrains.kotlin.kapt"
+	id "org.jetbrains.kotlin.plugin.parcelize"
+	id "org.jetbrains.kotlin.plugin.serialization"
+	id "androidx.navigation.safeargs.kotlin"
 }
 
 apply plugin: "com.github.triplet.play"
@@ -157,4 +157,3 @@ dependencies {
 
 apply(plugin: "com.google.gms.google-services")
 apply(plugin: "com.google.firebase.crashlytics")
-apply(plugin: "kotlinx-serialization")
