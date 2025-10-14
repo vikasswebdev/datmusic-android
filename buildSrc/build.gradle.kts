@@ -1,7 +1,13 @@
 plugins {
-    `kotlin-dsl`
+    kotlin("jvm") version "1.9.22"
 }
 
 repositories {
-    jcenter()
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+kotlin {
+    jvmToolchain(17)
 }

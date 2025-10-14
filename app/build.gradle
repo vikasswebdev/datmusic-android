@@ -7,13 +7,13 @@ import tm.alashow.buildSrc.App
 import tm.alashow.buildSrc.Deps
 
 plugins {
-	id("com.android.application")
-	id("dagger.hilt.android.plugin")
-	id("kotlin-android")
-	id("kotlin-kapt")
-	id("kotlin-parcelize")
-	id("org.jetbrains.kotlin.plugin.serialization")
-	id("androidx.navigation.safeargs.kotlin")
+	id "com.android.application"
+	id "com.google.dagger.hilt.android"
+	id "org.jetbrains.kotlin.android"
+	id "org.jetbrains.kotlin.kapt"
+	id "org.jetbrains.kotlin.plugin.parcelize"
+	id "org.jetbrains.kotlin.plugin.serialization"
+	id "androidx.navigation.safeargs.kotlin"
 }
 
 apply plugin: "com.github.triplet.play"
@@ -27,17 +27,17 @@ play {
 def gitSha = "git rev-parse --short HEAD".execute([], project.rootDir).text.trim()
 
 android {
-	compileSdkVersion = App.compileSdkVersion
+        namespace = "com.mygana"
+        compileSdk = App.compileSdkVersion
 
-	defaultConfig {
-		namespace = "tm.alashow.datmusic"
-		applicationId = App.id
-		versionCode = App.versionCode
-		versionName = "${App.versionName}-${gitSha}"
-		targetSdkVersion(App.targetSdkVersion)
-		minSdkVersion(App.minSdkVersion)
+        defaultConfig {
+                applicationId = App.id
+                versionCode = App.versionCode
+                versionName = "${App.versionName}-${gitSha}"
+                targetSdk = App.targetSdkVersion
+                minSdk = App.minSdkVersion
 
-		multiDexEnabled = true
+                multiDexEnabled = true
 		vectorDrawables.useSupportLibrary = true
 	}
 
@@ -48,19 +48,19 @@ android {
 		main.res.srcDirs += "src/main/res-drawable"
 	}
 
-	compileOptions {
-		sourceCompatibility = 1.8
-		targetCompatibility = 1.8
-	}
+        compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_1_8
+                targetCompatibility = JavaVersion.VERSION_1_8
+        }
 
 
 	buildFeatures {
 		compose = true
 	}
 
-	composeOptions {
-		kotlinCompilerExtensionVersion = Deps.Android.Compose.compilerVersion
-	}
+        composeOptions {
+                kotlinCompilerExtensionVersion = Deps.Android.Compose.compilerVersion
+        }
 
 	signingConfigs {
 		debug {
@@ -157,4 +157,3 @@ dependencies {
 
 apply(plugin: "com.google.gms.google-services")
 apply(plugin: "com.google.firebase.crashlytics")
-apply(plugin: "kotlinx-serialization")

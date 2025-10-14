@@ -3,6 +3,39 @@
  * All rights reserved.
  */
 
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            switch (requested.id.id) {
+                case "com.android.application":
+                case "com.android.library":
+                case "com.android.test":
+                    useVersion("8.2.2")
+                    break
+
+                case "com.google.dagger.hilt.android":
+                    useVersion("2.50")
+                    break
+
+                case "androidx.navigation.safeargs.kotlin":
+                    useVersion("2.7.6")
+                    break
+            }
+
+            if (requested.id.id.startsWith("org.jetbrains.kotlin")) {
+                useVersion("1.9.22")
+            }
+        }
+    }
+}
+
 include ":app"
 include ":modules:i18n"
 include ":modules:base"

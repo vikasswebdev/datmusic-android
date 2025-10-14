@@ -25,7 +25,7 @@
     <string name="downloads.download.status.paused">Durdyrylan</string>
     <string name="downloads.download.status.queued">Nobatda</string>
     <string name="downloads.download.status.downloading">Indirilýar</string>
-    <string name="app_name">Datmusic</string>
+    <string name="app_name">MyGana</string>
     <string name="search.hint">Aýdymlar, albomlar, aýdymçylar</string>
     <string name="audio.menu.copyLink">Linki nusgala</string>
     <string name="downloader.downloadsLocationSelect.title">Indirme ýeri</string>
@@ -62,8 +62,8 @@
     <string name="captcha.empty">Kapça boş bolmaly däl</string>
     <string name="error.unavailable">Ýuwaşrak</string>
     <string name="error.keyError">Açar ýalňyşlygy, programmany täzeläň</string>
-    <string name="app_launcher">Datmusic</string>
-    <string name="app_label">Datmusic</string>
+    <string name="app_launcher">MyGana</string>
+    <string name="app_label">MyGana</string>
     <string name="downloads.download.status.failed">Şowsuz</string>
     <string name="downloads.download.status.cancelled">Ýatyryldy</string>
     <string name="downloads.download.pause">Duruz</string>

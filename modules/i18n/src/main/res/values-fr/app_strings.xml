@@ -49,14 +49,14 @@
     <string name="downloader.enqueue.audio.error.invalidUrl">Le lien de téléchargement est invalide</string>
     <string name="audio.menu.download">Télécharger</string>
     <string name="audio.menu.copyLink">Copier le lien</string>
-    <string name="app_name">Datmusic</string>
-    <string name="app_launcher">Datmusic</string>
+    <string name="app_name">MyGana</string>
+    <string name="app_launcher">MyGana</string>
     <string name="downloads.download.status.cancelled">Annulé</string>
     <string name="search.audios">Chansons</string>
     <string name="albums.detail.title">Album</string>
     <string name="audio.menu.cd">Menu audio</string>
     <string name="downloader.enqueue.downloadsLocationNotSelected">Aucun emplacement défini</string>
-    <string name="app_label">Datmusic</string>
+    <string name="app_label">MyGana</string>
     <string name="search.title">Rechercher</string>
     <string name="search.hint">Morceaux, albums, artistes</string>
     <string name="search.hint.query">Requête de recherche</string>

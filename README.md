@@ -2,7 +2,7 @@
 
 # datmusic-android
 
-[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200">](https://play.google.com/store/apps/details?id=tm.alashow.datmusic)
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200">](https://play.google.com/store/apps/details?id=com.mygana)
 
 ### Demo video & Screenshots
 
