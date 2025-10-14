@@ -13,20 +13,14 @@ pluginManagement {
 
     resolutionStrategy {
         eachPlugin {
-            switch (requested.id.id) {
-                case "com.android.application":
-                case "com.android.library":
-                case "com.android.test":
-                    useVersion("8.2.2")
-                    break
+            when (requested.id.id) {
+                "com.android.application",
+                "com.android.library",
+                "com.android.test" -> useVersion("8.2.2")
 
-                case "com.google.dagger.hilt.android":
-                    useVersion("2.50")
-                    break
+                "com.google.dagger.hilt.android" -> useVersion("2.50")
 
-                case "androidx.navigation.safeargs.kotlin":
-                    useVersion("2.7.6")
-                    break
+                "androidx.navigation.safeargs.kotlin" -> useVersion("2.7.6")
             }
 
             if (requested.id.id.startsWith("org.jetbrains.kotlin")) {

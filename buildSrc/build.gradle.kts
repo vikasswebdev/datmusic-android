@@ -1,5 +1,7 @@
+import org.gradle.jvm.toolchain.JavaLanguageVersion
+
 plugins {
-    kotlin("jvm") version "1.9.22"
+    kotlin("jvm") version "1.7.10"
 }
 
 repositories {
@@ -9,5 +11,7 @@ repositories {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
 }
