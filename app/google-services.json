@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:182339910251:android:0471ac7b2dc78ac3",
         "android_client_info": {
-          "package_name": "tm.alashow.datmusic"
+          "package_name": "com.mygana"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "182339910251-datbtp2tvjb73datqfvi6u41b6n85s8c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tm.alashow.datmusic",
+            "package_name": "com.mygana",
             "certificate_hash": "6ec75dfd6a33d784aad67a7c31ab5e514e6aea1f"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "182339910251-lcah9j8gv6cujtvdufhtlb3gf5gfd8rc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tm.alashow.datmusic",
+            "package_name": "com.mygana",
             "certificate_hash": "4b375199270328a40f2a289c3c9a370fe0c740e5"
           }
         },
@@ -55,7 +55,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:182339910251:android:0471ac7b2dc78ac3",
         "android_client_info": {
-          "package_name": "tm.alashow.datmusic.debug"
+          "package_name": "com.mygana.debug"
         }
       },
       "oauth_client": [
@@ -63,7 +63,7 @@
           "client_id": "182339910251-datbtp2tvjb73datqfvi6u41b6n85s8c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tm.alashow.datmusic.debug",
+            "package_name": "com.mygana.debug",
             "certificate_hash": "6ec75dfd6a33d784aad67a7c31ab5e514e6aea1f"
           }
         },
@@ -71,7 +71,7 @@
           "client_id": "182339910251-lcah9j8gv6cujtvdufhtlb3gf5gfd8rc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tm.alashow.datmusic.debug",
+            "package_name": "com.mygana.debug",
             "certificate_hash": "4b375199270328a40f2a289c3c9a370fe0c740e5"
           }
         },
@@ -100,7 +100,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:182339910251:android:0471ac7b2dc78ac3",
         "android_client_info": {
-          "package_name": "tm.alashow.datmusic.alpha"
+          "package_name": "com.mygana.alpha"
         }
       },
       "oauth_client": [
@@ -108,7 +108,7 @@
           "client_id": "182339910251-datbtp2tvjb73datqfvi6u41b6n85s8c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tm.alashow.datmusic.alpha",
+            "package_name": "com.mygana.alpha",
             "certificate_hash": "6ec75dfd6a33d784aad67a7c31ab5e514e6aea1f"
           }
         },
@@ -116,7 +116,7 @@
           "client_id": "182339910251-lcah9j8gv6cujtvdufhtlb3gf5gfd8rc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tm.alashow.datmusic.alpha",
+            "package_name": "com.mygana.alpha",
             "certificate_hash": "4b375199270328a40f2a289c3c9a370fe0c740e5"
           }
         },
